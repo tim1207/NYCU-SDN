@@ -1,0 +1,23 @@
+{
+    "priority": 50002,
+    "timeout": 0,
+    "isPermanent": true,
+    "selector": {
+      "criteria": [
+        {
+          "type": "ETH_TYPE",
+          "ethType": "0x0800" 
+        },
+        {
+          "type": "IPV4_SRC",
+          "ip": "192.168.130.1/32"
+        },
+        {
+          "type": "IPV4_DST",
+          "ip": "192.168.130.2/32"
+        }
+      ]
+    }
+  }
+  
+  //50102549084207784
