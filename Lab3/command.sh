@@ -43,6 +43,7 @@ ok clean
 cd $ONOS_ROOT
 onos-app localhost install! target/bridge-app-1.0-SNAPSHOT.oar
 
+onos-app localhost uninstall nycu.winlab.bridge
 
 # Rebuild application of new version:
 mvn clean install -DskipTests
@@ -56,6 +57,11 @@ onos-app localhost uninstall <onos.app.name>
 # Install and activate application of new version:
 # Hint install! => install and active
 onos-app localhost install! target/<artifactId>-<version>.oar
+
+sudo mn --controller=remote,127.0.0.1:6653 \
+      --topo=tree,depth=2 \
+      --switch=ovs,protocols=OpenFlow14
+
 
 
 
