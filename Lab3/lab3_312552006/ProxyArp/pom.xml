@@ -33,7 +33,7 @@
 
     <properties>
         <onos.app.name>nycu.winlab.ProxyArp</onos.app.name>
-        <onos.app.title>Proxy ARP App</onos.app.title>
+        <onos.app.title>ProxyArp APP</onos.app.title>
         <onos.app.origin>WinLab, NYCU</onos.app.origin>
         <onos.app.category>default</onos.app.category>
         <onos.app.url>http://onosproject.org</onos.app.url>

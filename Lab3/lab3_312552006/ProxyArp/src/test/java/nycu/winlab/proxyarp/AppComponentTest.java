@@ -13,10 +13,35 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package nycu.winlab.ProxyArp;
+package nycu.winlab.proxyarp;
 
-public interface SomeInterface {
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.onosproject.cfg.ComponentConfigAdapter;
 
-    void someMethod();
+/**
+ * Set of tests of the ONOS application component.
+ */
+public class AppComponentTest {
+
+    private AppComponent component;
+
+    @Before
+    public void setUp() {
+        component = new AppComponent();
+        component.cfgService = new ComponentConfigAdapter();
+        component.activate();
+    }
+
+    @After
+    public void tearDown() {
+        component.deactivate();
+    }
+
+    @Test
+    public void basics() {
+
+    }
 
 }
